@@ -1,1 +1,1 @@
-# nst_-admission
+# NST_Project
