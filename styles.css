@@ -1,10 +1,11 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
     margin: 0;
     padding: 0;
     color: black;
+    text-align: center;
 }
 
 /* Navbar */
@@ -87,68 +88,40 @@ body {
     transform: scale(1.1);
 }
 
-/* Mentor Cards */
-.mentor-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.card {
+/* Ask Question Page */
+.question-box {
     background: white;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.card h2 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.card p {
-    font-size: 14px;
-    color: #333;
-}
-
-/* Book Button */
-.book-btn {
-    background-color: black;
-    color: white;
-    padding: 12px;
-    border: none;
-    width: 100%;
     border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: auto;
 }
 
-.book-btn:hover {
-    background-color: #444;
-    transform: scale(1.05);
+.question-box input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.question-box button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.question-box button:hover {
+    background-color: #007bff;
 }
 
 /* Dark Mode */
 .dark-mode {
-    background: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
     color: #f0f0f0;
 }
 
@@ -165,12 +138,18 @@ body {
     background: #007bff;
 }
 
-.dark-mode .card {
-    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+.dark-mode .question-box {
+    background: #2c2c2c;
     box-shadow: 0px 8px 12px rgba(200, 200, 200, 0.1);
     color: white;
 }
 
-.dark-mode .book-btn {
+.dark-mode .question-box input {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode .question-box button {
     background: linear-gradient(135deg, #007bff, #0056b3);
 }
