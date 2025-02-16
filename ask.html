@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASK A QUESTION</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mentor.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Quiz Question</li>
+                    <li><a href="mentor.html">Mentor Slot Booking</a></li>
+                    <li>FAQs</li>
+                    <li><a href="ask.html">Ask Question</a></li>
+                    <li id="theme-toggle" class="theme-toggle">🌙</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ask Question Section -->
+    <div class="container">
+        <h1>Ask a Question</h1>
+        <p>Get expert advice by submitting your question.</p>
+
+        <div class="question-box">
+            <input type="text" id="question" placeholder="Type your question here...">
+            <button onclick="submitQuestion()">Submit</button>
+            <p class="message" id="message"></p>
+        </div>
+    </div>
+
+<script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Light Mode Gradient */
+    margin: 0;
+    padding: 20px;
+    color: black;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Mentor Cards */
+.mentor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0px 8px 16px rgba(0, 123, 255, 0.3); /* Adds a glowing effect */
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.company img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.rating {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Book Button */
+.book-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect on Button */
+.book-btn:hover {
+    background-color: #444;
+    transform: scale(1.05); /* Slightly enlarges button */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mentor-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c); /* Dark Mode Gradient */
+    color: #f0f0f0;
+}
+
+/* Dark Mode Card Styling */
+.dark-mode .card {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    box-shadow: 0px 8px 12px rgba(200, 200, 200, 0.1);
+    color: white;
+}
+
+/* Dark Mode Hover Effect */
+.dark-mode .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.5); /* Adds a blue glow */
+}
+
+/* Fix text visibility */
+.dark-mode .container h1, 
+.dark-mode .container p {
+    color: white;
+}
+
+/* Dark Mode Book Button */
+.dark-mode .book-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
