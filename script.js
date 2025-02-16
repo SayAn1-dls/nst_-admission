@@ -20,3 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Function for Ask Question Page
+function submitQuestion() {
+    let questionInput = document.getElementById("question").value.trim();
+    let messageBox = document.getElementById("message");
+
+    if (questionInput === "") {
+        messageBox.innerHTML = "Please enter a valid question.";
+        messageBox.style.color = "red";
+    } else {
+        messageBox.innerHTML = "Your question has been submitted!";
+        messageBox.style.color = "green";
+        document.getElementById("question").value = ""; 
+    }
+}
